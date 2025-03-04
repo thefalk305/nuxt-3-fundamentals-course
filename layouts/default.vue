@@ -8,6 +8,11 @@ const user = useUser();
   <nav style="display:flex; gap: 10px">
     <NuxtLink to="/">Home</NuxtLink>
     <NuxtLink to="/movies">Movies</NuxtLink>
+    <NuxtLink to="/static">Static</NuxtLink>
+    <NuxtLink to="/ssr">SSR</NuxtLink>
+    <NuxtLink to="/swr">SWR</NuxtLink>
+    <NuxtLink to="/spa">SPA</NuxtLink>
+    
     <NuxtLink to="https://vueschool.io">Vue School</NuxtLink>
     <NuxtLink v-if="!user.isLoggedIn" to="/login">Login</NuxtLink>
     <a href="#" v-else @click.prevent="user.isLoggedIn = false">LogOut</a>
